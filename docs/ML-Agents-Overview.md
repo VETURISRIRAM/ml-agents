@@ -226,7 +226,7 @@ inference can proceed.
 
 ### Built-in Training and Inference
 
-As mentioned previously, ML-Agents ships with several implementations of 
+As mentioned previously, ML-Agents ship with several implementations of 
 state-of-the-art algorithms for training intelligent agents. In this mode, the 
 Brain type is set to External during training and Internal during inference. 
 More specifically, during training, all the medics in the scene send their
