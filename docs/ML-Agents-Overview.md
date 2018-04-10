@@ -109,7 +109,7 @@ the process of learning a policy through running simulations is called the
 **training phase**, while playing the game with an NPC that is using its 
 learned policy is called the **inference phase**.
 
-ML-Agents provides all the necessary tools for using Unity as the simulation 
+ML-Agents provide all the necessary tools for using Unity as the simulation 
 engine for learning the policies of different objects in a Unity environment.
 In the next few sections, we discuss how ML-Agents achieves this and what
 features it provides.
