@@ -97,7 +97,7 @@ machine is precisely what reinforcement learning is designed to do.
 More specifically, the goal of reinforcement learning is to learn a **policy**, 
 which is essentially a mapping from **observations** to **actions**. An 
 observation is what the robot can measure from its **environment** (in this 
-case, all its sensory inputs) and an action, in its most raw form, is a change
+case, all its sensory inputs) and an action(in this case, all its actuators), in its most raw form, is a change
 to the configuration of the robot (e.g. position of its base, position of
 its water hose and whether the hose is on or off). 
 
