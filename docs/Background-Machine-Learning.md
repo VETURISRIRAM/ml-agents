@@ -16,7 +16,7 @@ as well as introductory examples.
 
 The goal of 
 [unsupervised learning](https://en.wikipedia.org/wiki/Unsupervised_learning) is to group or cluster similar items in a 
-data set. For example, consider the players of a game. We may want to group 
+data set. A very simple example of such learning type would be K-means clustering algorithm. For example, consider the players of a game. We may want to group 
 the players depending on how engaged they are with the game. This would enable
 us to target different groups (e.g. for highly-engaged players we might
 invite them to be beta testers for new features, while for unengaged players
