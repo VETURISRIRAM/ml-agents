@@ -42,7 +42,7 @@ class TrainerController(object):
                     .replace('.x86', ''))  # Strip out executable extensions if passed
         # Recognize and use docker volume if one is passed as an argument
         if docker_target_name == '':
-            self.model_path = './models/{run_id}'.format(run_id=run_id)
+            self.model_path = './models/{0}'.format(run_id)
             self.curriculum_file = curriculum_file
             self.summaries_dir = './summaries'
         else:
