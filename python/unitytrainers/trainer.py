@@ -34,6 +34,13 @@ class Trainer(object):
 
     def __str__(self):
         return '''Empty Trainer'''
+    
+    def __repr__(self):
++        return "Trainer(Session = {0}, Env = {1}, Brain Name = {2}, Trainer Parameters = {3}, Training = {4})".format(self.sess, self.brain, self.brain_name, self.trainer_parameters, self.is_training)
+ 
+     @property
+     def parameters(self):
+
 
     @property
     def parameters(self):
