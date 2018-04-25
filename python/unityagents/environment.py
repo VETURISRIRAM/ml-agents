@@ -8,6 +8,7 @@ import os
 import socket
 import subprocess
 import struct
+import time as t
 
 from .brain import BrainInfo, BrainParameters, AllBrainInfo
 from .exception import UnityEnvironmentException, UnityActionException, UnityTimeOutException
@@ -147,7 +148,7 @@ class UnityEnvironment(object):
         except UnityEnvironmentException:
             proc1.kill()
             self.close()
-            raise
+            raise UnityEnvironmentException("Unable to establish the socket connection!")
 
     @property
     def curriculum(self):
@@ -195,7 +196,7 @@ class UnityEnvironment(object):
         s = bytearray(image_bytes)
         image = Image.open(io.BytesIO(s))
         s = np.array(image) / 255.0
-        if bw:
+        if bw == True:
             s = np.mean(s, axis=2)
             s = np.reshape(s, [s.shape[0], s.shape[1], 1])
         return s
@@ -245,6 +246,7 @@ class UnityEnvironment(object):
         if state[:14] == "END_OF_MESSAGE":
             return {}, state[15:] == 'True'
         self._conn.send(b"RECEIVED")
+        t.sleep(0.0001)
         state_dict = json.loads(state)
         return state_dict, None
 
