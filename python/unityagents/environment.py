@@ -50,7 +50,8 @@ class UnityEnvironment(object):
         except socket.error:
             self._open_socket = True
             self.close()
-            raise socket.error("Couldn't launch new environment because worker number {} is still in use. "
+            if self.close() == True:
+                raise socket.error("Couldn't launch new environment because worker number {} is still in use. "
                                "You may need to manually close a previously opened environment "
                                "or use a different worker number.".format(str(worker_id)))
 
