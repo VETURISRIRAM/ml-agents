@@ -30,7 +30,7 @@ see the [installation instructions](Installation.md).
 ## Understanding a Unity Environment (3D Balance Ball)
 
 An agent is an autonomous actor that observes and interacts with an 
-_environment_. In the context of Unity, an environment is a scene containing 
+_environment_. An agent can be understood as someone who learns from the environment and improves himself to obtain maximum reward. In the context of Unity, an environment is a scene containing 
 an Academy and one or more Brain and Agent objects, and, of course, the other 
 entities that an agent interacts with.  
 
