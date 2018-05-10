@@ -7,7 +7,7 @@ introduced in the
 [Getting Started with the 3D Balance Ball Environment](Getting-Started-with-Balance-Ball.md)
 tutorial, but can be used for testing the connection to any Unity build.
 
-For a walkthrough of how to use Jupyter, see
+For a walk-through of how to use Jupyter, see
 [Running the Jupyter Notebook](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html)
 in the _Jupyter/IPython Quick Start Guide_. To launch Jupyter, run in the command line:
 
