@@ -1,12 +1,12 @@
 # Python API
 
-ML-Agents provides a Python API for controlling the agent simulation loop of a environment or game built with Unity. This API is used by the ML-Agent training algorithms (run with `learn.py`), but you can also write your Python programs using this API. 
+ML-Agents provides a Python API for controlling the agent's simulation loop of an environment or game built with Unity. This API is used by the ML-Agents training algorithms (run with `learn.py`), but you can also write your Python programs using this API. 
 
 The key objects in the Python API include:
 
 * **UnityEnvironment** — the main interface between the Unity application and your code. Use UnityEnvironment to start and control a simulation or training session.
 * **BrainInfo** — contains all the data from agents in the simulation, such as observations and rewards.
-* **BrainParameters** — describes the data elements in a BrainInfo object. For example, provides the array length of an observation in BrainInfo.
+* **BrainParameters** — describe the data elements in a BrainInfo object. For example, provide the array length of an observation in BrainInfo.
 
 These classes are all defined in the `python/unityagents` folder of the ML-Agents SDK.
 
